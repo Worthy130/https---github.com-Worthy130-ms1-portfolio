@@ -57,10 +57,10 @@
 
     <main>
         <!--About Me Section-->
-        <section>
+        <section class="about-me">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-4">
                         Hello, I’m James Worthington, a passionate Web Developer dedicated to building modern,
                         responsive, and
                         user-focused websites. My journey in web development began with a curiosity for how things work
@@ -75,7 +75,7 @@
                         by a commitment to clean, efficient code and intuitive design.
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <p>I believe that great websites are more than just functional—they should provide an engaging
                             experience. I
                             focus on: <br>
@@ -85,7 +85,7 @@
                             • Continuous Learning: Staying up to date with the latest technologies and trends to deliver
                             cutting-edge solutions.
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         Collaboration and problem-solving are at the heart of my work. I enjoy working with clients and
                         teams to
                         transform ideas into reality, delivering solutions that meet both technical and business goals.
@@ -105,36 +105,61 @@
                     </div>
                     <div class="col-4">
                         <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
-                </div>
-                    <div class="col-4">
-                        <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
-                    </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
                     </div>
                     <div class="col-4">
                         <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
-                </div>
-                    <div class="col-4">
-                        <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
                     </div>
-            </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/images/istockphoto-612x612.jpg" alt="Placeholder">
+                        </div>
+                    </div>
         </section>
+        <!--Contact Me Section-->
+        <section class="contact-me">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </form>
+        </section>
+
 
     </main>
 
     <footer>
-        <h4>Footer</h4>
+        <section class="footer">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <p>&copy; 2025 James Worthington. All rights reserved.</p>
+                </div>
 
-        <!--Social links-->
-        <div class="btn-group">
-            <a href="https://www.facebook.com/profile.php?id=61584420122536&locale=en_GB" class="btn btn-primary"><i
-                    class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com" class="btn btn-primary"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.x.com" class="btn btn-primary"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
+                <!--Social links-->
+                <div class="col-4">
+                    <h5>Follow Me</h5>
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.facebook.com/profile.php?id=61584420122536&locale=en_GB"
+                        class="btn btn-primary"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" class="btn btn-primary"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.x.com" class="btn btn-primary"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+        </section>
 
 
     </footer>
