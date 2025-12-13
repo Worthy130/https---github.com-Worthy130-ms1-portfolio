@@ -7,28 +7,52 @@ body {
 
 /* Logo Styling */
 .navbar .logo {
-    height: 150px;
+    height: 200px;
     width: auto;
 }
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #75ba75;
+}
 
+.navbar-nav {
+    display: flex;
+    flex: auto;
+    justify-content: end;
+    padding: 10px 20px;
+    font-size: 40px;
+}
 /* Header Styling */
 .header {
     text-align: center;
-    margin: 20px 0;
+    padding: 30px 30px;
     background-color: cornflowerblue;
 }
+
+.header h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
 .header-image img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     object-fit: cover;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
 
 /* About Me Section */
 
+
+
+
+
+
+/* What I Can Do Section */
 
 
 
