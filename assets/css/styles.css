@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Tinos', serif;
+    padding-top: 220px; /* Adjusted for fixed navbar height */
 }
 
 /* Logo Styling */
@@ -10,6 +11,32 @@ body {
     height: 200px;
     width: auto;
 }
+
+/* Buttons */
+
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 1px solid green;
+    padding: 7px 25px;
+    background-color: #b3e2b6;
+}
+
+.custom-button-outline:hover {
+    background-color: #75ba75;
+    color: black
+}
+
 /* Navigation Bar Styling */
 .navbar {
     background-color: #75ba75;
@@ -43,35 +70,62 @@ body {
     margin-top: 15px;
 }
 
-
-
 /* About Me Section */
-
-
-
-
-
-
-/* What I Can Do Section */
-
-
-
+#about-me {
+    padding: 50px 20px;
+    background-color: #b3e2b6;
+    text-align: center;
+}
 
 
 
 /* Portfolio Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #d9f0d9;
+    text-align: center;
+}
+
+/* Footer / contact */
+
+#contact {
+    background-color: cornflowerblue;
+    padding-bottom: 3rem;
+}
+
+#contact .social-icons i {
+    font-size: 4rem;
+    padding: 10px;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
 
 
+#contact .table-primary * {
+    background-color: transparent;
+}
 
+/* Media queries */
 
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    
+}
 
-/* Contact Section */
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+   
+}
 
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
 
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}
 
-
-/* Footer Styling */
-.btn-group {
-    height: 60px;
-    width: 200px;;
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
 }
