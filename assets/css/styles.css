@@ -75,10 +75,15 @@ body {
 
 
 /* Portfolio Section */
-#projects .card{
-    margin-bottom: 30px;
-    
+ /* Carousel container to center carousels and add padding */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
 }
+    
+
 
 /* Footer / contact */
 
