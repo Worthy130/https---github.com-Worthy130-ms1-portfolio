@@ -14,17 +14,6 @@ body {
 
 /* Buttons */
 
-/* .custom-button-filled {
-    border: 2px solid var(--highlight-color);
-    background-color: var(--highlight-color);
-    color: white;
-}
-
-.custom-button-filled:hover {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: white;
-} */
 
 .custom-button-outline {
     border: 1px solid green;
@@ -39,7 +28,8 @@ body {
 
 /* Navigation Bar Styling */
 .navbar {
-    background-color: #75ba75;
+    background-color: #060714;
+    color: white
 }
 
 .navbar-nav {
@@ -48,6 +38,11 @@ body {
     justify-content: end;
     padding: 10px 20px;
     font-size: 40px;
+}
+/* Navigation Links Styling */
+#nav {
+    color: white;
+    margin: 10px;
 }
 /* Header Styling */
 .header {
