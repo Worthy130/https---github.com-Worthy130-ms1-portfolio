@@ -48,7 +48,7 @@ body {
 .header {
     text-align: center;
     padding: 30px 30px;
-    background-color: cornflowerblue;
+    background-color: #3f7f90
 }
 
 .header h2 {
@@ -75,6 +75,38 @@ body {
 
 
 /* Portfolio Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    
+}
+    
+.div1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    /* to push the carousel down for nav link space */
+    padding-top: 250px;
+}
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem
+}
+        
+
  /* Carousel container to center carousels and add padding */
 .carousel-container {
     display: flex;
@@ -82,20 +114,26 @@ body {
     align-items: center;
     padding-bottom: 30px;
 }
+.carousel-container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
     
 
 
 /* Footer / contact */
 
 #contact {
-    background-color: cornflowerblue;
-    padding-bottom: 3rem;
+    background-color: #3f7f90;
+    padding-bottom: 50px;
 }
 
 #contact .social-icons i {
-    font-size: 4rem;
-    padding: 10px;
-    -webkit-transition: color 0.3s ease-in-out;
+    font-size: 2rem;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: white;
+    -webkit-transition:  0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
