@@ -36,7 +36,7 @@ body {
     display: flex;
     flex: auto;
     justify-content: end;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 40px;
 }
 /* Navigation Links Styling */
@@ -67,7 +67,7 @@ body {
 
 /* About Me Section */
 #about-me {
-    padding: 50px 20px;
+    padding: 20px 20px;
     background-color: #b3e2b6;
     text-align: center;
 }
@@ -78,9 +78,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    
+    grid-template-rows: repeat(2, 1fr);    
 }
     
 .div1 {
