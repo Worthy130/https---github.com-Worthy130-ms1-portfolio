@@ -75,6 +75,26 @@ body {
 
 
 /* Portfolio Section */
+
+#portfolio {
+    padding: 50px 20px;
+    background-color: #e6f2f0;
+    text-align: center;
+    padding-top: 250px;
+}
+#portfolio .card {
+    margin: 15px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+#portfolio .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Love Running & Boardwalk Games pages */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
