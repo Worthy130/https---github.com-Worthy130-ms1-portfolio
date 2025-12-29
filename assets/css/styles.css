@@ -1,29 +1,21 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {
+:root {
     font-family: 'Tinos', serif;
-    padding-top: 220px; /* Adjusted for fixed navbar height */
+    padding-top: 125px; /* Adjusted for fixed navbar height */
 }
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
 
 /* Logo Styling */
 .navbar .logo {
-    height: 200px;
+    height: 100px;
     width: auto;
-}
-
-/* Buttons */
-
-
-.custom-button-outline {
-    border: 1px solid green;
-    padding: 7px 25px;
-    background-color: #b3e2b6;
-}
-
-.custom-button-outline:hover {
-    background-color: #75ba75;
-    color: black
 }
 
 /* Navigation Bar Styling */
@@ -48,27 +40,22 @@ body {
 .header {
     text-align: center;
     padding: 30px 30px;
-    background-color: #3f7f90
+    background-color: #3f7f90;
 }
 
-.header h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.header-image img {
+/* About Me Section */
+.about-me-image img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     object-fit: cover;
     margin-bottom: 15px;
-    margin-top: 15px;
+    margin-top: 140px;
 }
 
-/* About Me Section */
 #about-me {
     padding: 20px 20px;
-    background-color: #b3e2b6;
+    background-image: linear-gradient(to bottom, #3f7f90, #689368);
     text-align: center;
 }
 
@@ -78,9 +65,10 @@ body {
 
 #portfolio {
     padding: 50px 20px;
-    background-color: #e6f2f0;
+    background-image: linear-gradient(to bottom, #3f7f90, #e6f2f0);
     text-align: center;
-    padding-top: 250px;
+    padding-top: 200px;
+    padding-bottom: 175px;
 }
 #portfolio .card {
     margin: 15px auto;
