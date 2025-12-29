@@ -6,9 +6,11 @@
     padding-top: 125px; /* Adjusted for fixed navbar height */
 }
 
+
 h2 {
     font-size: 50px;
     margin-bottom: 20px;
+    color: #000000
 }
 
 
@@ -21,7 +23,7 @@ h2 {
 /* Navigation Bar Styling */
 .navbar {
     background-color: #060714;
-    color: white
+    color: white;
 }
 
 .navbar-nav {
@@ -39,7 +41,7 @@ h2 {
 /* Header Styling */
 .header {
     text-align: center;
-    padding: 30px 30px;
+    padding: 100px 30px;
     background-color: #3f7f90;
 }
 
@@ -54,7 +56,7 @@ h2 {
 }
 
 #about-me {
-    padding: 20px 20px;
+    padding: 100px 30px;
     background-image: linear-gradient(to bottom, #3f7f90, #689368);
     text-align: center;
 }
@@ -65,12 +67,14 @@ h2 {
 
 #portfolio {
     padding: 50px 20px;
-    background-image: linear-gradient(to bottom, #3f7f90, #e6f2f0);
+        background-image: linear-gradient(to bottom, #689368, #3f7f90);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 175px;
+    color: #000000
 }
 #portfolio .card {
+    padding: 50px 20px;
     margin: 15px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -82,7 +86,7 @@ h2 {
     justify-content: center;
 }
 
-/* Love Running & Boardwalk Games pages */
+/* Love Running & Boardwalk Games page */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -111,8 +115,13 @@ h2 {
     margin: auto;
     font-size: 1.5rem
 }
-        
 
+#boardwalk-games {
+        background-image: linear-gradient(to bottom, #3f7f90, #689368);
+}
+#love-running {
+        background-image: linear-gradient(to bottom, #689368, #3f7f90);
+}
  /* Carousel container to center carousels and add padding */
 .carousel-container {
     display: flex;
@@ -125,13 +134,19 @@ h2 {
     margin-bottom: 15px;
 }
     
-
+/* Contact form section */
+#contact-me {
+    padding: 50px 20px;
+    background-image: linear-gradient(to bottom, #3f7f90, #689368);
+    text-align: center;
+}
 
 /* Footer / contact */
 
 #contact {
     background-color: #3f7f90;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #contact .social-icons i {
@@ -153,7 +168,7 @@ h2 {
 
 /* Small screens and up */
 @media screen and (min-width: 576px) {
-    
+
 }
 
 /* Medium devices (tablets, 768px and up) */
