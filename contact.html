@@ -44,9 +44,9 @@
 
 
     <header>
-        <div class="header">
-            <div class="header-image">
-                <img src="assets/images/Pixelio-blue-logo.png" alt="Pixelio logo">>
+        <div class="header contact-header">
+            <div class="contact-header-logo">
+                <img src="assets/images/Pixelio-blue-logo.png" alt="Pixelio logo">
             </div>
             <h2>
                 Get in touch with Pixelio
@@ -57,23 +57,22 @@
     <main>
                 <!-- Contact Me inquiry form section -->
         <section id="contact-me">
-            <div class="row container-fluid">
-                <div class="col-12 col-md-8">
+            <div class="container-fluid">
                     <form action="success.html" method="GET">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 mb-3">
+                        <div class="row justify-content-center g-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <label for="name" class="form-label">Name</label>
                                 <input class="form-control" id="name" name="name" type="text" required>
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <label for="email" class="form-label">Email</label>
                                 <input class="form-control" id="email" name="email" type="email" required>
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="col-12 col-lg-6">
                                 <label for="phone" class="form-label">Phone number</label>
                                 <input class="form-control" id="phone" name="phone" type="number" required>
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <label for="enquiry-type" class="form-label">Enquiry type</label>
                                 <select id="event-type" class="form-select" name="event-type" required>
                                     <option value="" selected>Select</option>
@@ -82,7 +81,7 @@
                                     <option value="General Enquiry">General Enquiry</option>
                                 </select>
                             </div>
-                            <div class="col-12 mb-3">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
                             </div>
@@ -97,11 +96,13 @@
 
     </main>
 
-        <!-- contact section -->
+    <!-- contact section -->
     <footer id="contact" class="mt-auto">
         <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12">
+                    <h2>Contact</h2>
+                </div>
+                <div class="col-6">
                     <h3>Contact info</h3>
                     <!-- business address in <address> element for semantic html -->
                     <address>
@@ -115,7 +116,7 @@
                         <i class="fa-solid fa-phone"></i> 012 345 6789<br>
                         <i class="fa-regular fa-paper-plane"></i> info@pixelio.co.uk
                     </p>
-                    <div class="social-icons mt-4">
+                    <div class="social-icons">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener"
                             aria-label="Visit our Instagram page (opens in a new tab)"><i
                                 class="fa-brands fa-instagram"></i></a>
@@ -127,8 +128,8 @@
                                 class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Opening times</h3>
+                <div class="col-6">
+                    <h3>Opening times</h3>
                     <table class="table table-primary">
                         <thead>
                             <tr>
@@ -143,7 +144,7 @@
                                 <td>9pm</td>
                                 <td>5pm</td>
                             </tr>
-                        
+
                             <tr>
                                 <th scope="row">Sat</th>
                                 <td>9pm</td>
@@ -153,12 +154,11 @@
                                 <th scope="row">Sun</th>
                                 <td>Closed</td>
                                 <td>Closed</td>
-                                
+
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
         </div>
     </footer>
 
