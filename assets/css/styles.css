@@ -226,6 +226,6 @@ background-image: linear-gradient(to bottom, #689368, #3f7f90);
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     #projects .card {
-        max-width: 450px;
+        max-width: 500px;
     }
 }
