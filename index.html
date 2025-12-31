@@ -33,10 +33,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a id="nav" class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a id="nav" class="nav-link" href="#about-me">About Me</a>
-                    <a id="nav" class="nav-link" href="#portfolio">Portfolio</a>
-                    <a id="nav" class="nav-link" href="contact.html">Contact</a>
+                    <a id="nav-home" class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a id="nav-about-me" class="nav-link" href="#about-me">About Me</a>
+                    <a id="nav-portfolio" class="nav-link" href="#portfolio">Portfolio</a>
+                    <a id="nav-contact" class="nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
         <section id="about-me">
             <div class="container-fluid">
                 <div class="header-image-jw">
-                    <img src="assets/images/placeholder image.jpg" alt="Picture of James Worthington">
+                    <img src="assets/images/placeholder-image.jpg" alt="Picture of James Worthington">
                     <h2>
                         James Worthington - Owner, Web Designer and Creator
                     </h2>
@@ -99,10 +99,9 @@
                         ultimate aim is to create websites that not only look great but also help businesses thrive
                         online.
                     </div>
-                    </row>
                 </div>
+            </div>
         </section>
-
         <!--Portfolio cards-->
         <section id="portfolio">
             <h2 class="text-center">Portfolio</h2>
@@ -125,6 +124,7 @@
                         <a href="portfolio-gallery.html#love-running" class="btn">Go to image gallery</a>
                     </div>
                 </div>
+            </div>
         </section>
 
     </main>
@@ -132,71 +132,76 @@
     <!-- contact section -->
     <footer id="contact" class="mt-auto">
         <div class="container-fluid">
-                <div class="col-12">
-                    <h2>Contact</h2>
+            <div class="col-12">
+                <h2>Contact</h2>
+            </div>
+            <div class="col-6">
+                <h3>Contact info</h3>
+                <!-- business address in <address> element for semantic html -->
+                <address>
+                    <strong><i class="fa-solid fa-location-dot"></i>Pixelio</strong>
+                    <br>
+                    123 Alpha Street
+                    <br>
+                    Alpha City, 12345
+                </address>
+                <p>
+                    <i class="fa-solid fa-phone"></i> 012 345 6789<br>
+                    <i class="fa-regular fa-paper-plane"></i> info@pixelio.co.uk
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter feed (opens in a new tab)"><i
+                            class="fa-brands fa-x-twitter"></i></a>
                 </div>
-                <div class="col-6">
-                    <h3>Contact info</h3>
-                    <!-- business address in <address> element for semantic html -->
-                    <address>
-                        <strong><i class="fa-solid fa-location-dot"></i>Pixelio</strong>
-                        <br>
-                        123 Alpha Street
-                        <br>
-                        Alpha City, 12345
-                    </address>
-                    <p>
-                        <i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-regular fa-paper-plane"></i> info@pixelio.co.uk
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Instagram page (opens in a new tab)"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Twitter feed (opens in a new tab)"><i
-                                class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <h3>Opening times</h3>
-                    <table class="table table-primary">
-                        <thead>
-                            <tr>
-                                <th scope="col">Day</th>
-                                <th scope="col">Open</th>
-                                <th scope="col">Close</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Mon - Fri</th>
-                                <td>9pm</td>
-                                <td>5pm</td>
-                            </tr>
+            </div>
+            <div class="col-6">
+                <h3>Opening times</h3>
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Open</th>
+                            <th scope="col">Close</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mon - Fri</th>
+                            <td>9pm</td>
+                            <td>5pm</td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">Sat</th>
-                                <td>9pm</td>
-                                <td>1pm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Sun</th>
-                                <td>Closed</td>
-                                <td>Closed</td>
+                        <tr>
+                            <th scope="row">Sat</th>
+                            <td>9pm</td>
+                            <td>1pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sun</th>
+                            <td>Closed</td>
+                            <td>Closed</td>
 
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer-divider">
+            <p class="text-center">© 2025 Pixelio. All rights reserved.</p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" >
+                </a>
         </div>
     </footer>
-
-
-
     <!--Bootstrap Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
