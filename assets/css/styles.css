@@ -225,7 +225,12 @@ h2 {
 /* Media queries */
 
 /* Small screens and up */
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    /* decreased font size for h2 on boardwalk-games and love-running pages for small screen fit */
+    #boardwalk-games h2, #love-running h2 {
+        font-size: 60px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {}
