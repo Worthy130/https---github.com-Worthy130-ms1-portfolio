@@ -19,10 +19,12 @@
     background-color: #0b5ed7;
     color: white;
 }
+
 /* Carousel Button Styling */
 #carousel-btn {
     height: 5px;
 }
+
 /* Headings Styling */
 h1 {
     margin: 20px;
@@ -57,10 +59,11 @@ h2 {
 }
 
 /* Navigation Links Styling */
-.nav-link{
+.nav-link {
     color: white;
     margin: 10px;
 }
+
 .navbar-toggler {
     background-color: white;
 }
@@ -224,34 +227,53 @@ h2 {
 
 /* Media queries */
 
-/* Small screens and up */
-@media screen and (min-width: 576px) {
-    /* decreased font size for h2 on boardwalk-games and love-running pages for small screen fit */
-    #boardwalk-games h2, #love-running h2 {
-        font-size: 60px;
+/* Extra small devices (phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    #boardwalk-games .carousel-container {
+        max-width: 100%;
     }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {}
-
-/* Large devices (small laptops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #projects .card {
-        max-width: 325px;
+    #boardwalk-games h2,
+    #love-running h2 {
+        font-size: 40px;
+        }
     }
-}
 
-/* xl devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    #projects .card {
-        max-width: 400px;
+    /* Small screens and up */
+    @media screen and (min-width: 576px) {
+    #boardwalk-games h2,
+    #love-running h2 {
+        font-size: 50px;
+        }
+    #boardwalk-games .carousel-container img,
+    #love-running .carousel-container img,
+    #description {
+            padding-left: 20px;
+        }
     }
-}
+    /* Medium devices (tablets, 768px and up) */
+    @media screen and (min-width: 768px) {
+        #projects .card {
+            max-width: 250px;
+        }
+    }
 
-/* xxl devices (larger desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
-    #projects .card {
-        max-width: 500px;
+    /* Large devices (small laptops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        #projects .card {
+            max-width: 325px;
+        }
     }
-}
+
+    /* xl devices (large desktops, 1200px and up) */
+    @media screen and (min-width: 1200px) {
+        #projects .card {
+            max-width: 400px;
+        }
+    }
+
+    /* xxl devices (larger desktops, 1400px and up) */
+    @media screen and (min-width: 1400px) {
+        #projects .card {
+            max-width: 500px;
+        }
+    }
