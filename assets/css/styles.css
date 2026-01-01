@@ -19,7 +19,10 @@
     background-color: #0b5ed7;
     color: white;
 }
-
+/* Carousel Button Styling */
+#carousel-btn {
+    height: 5px;
+}
 /* Headings Styling */
 h1 {
     margin: 20px;
