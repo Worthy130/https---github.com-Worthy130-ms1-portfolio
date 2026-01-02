@@ -3,8 +3,7 @@
 
 :root {
     font-family: 'Tinos', serif;
-    padding-top: 125px;
-    /* Adjusted for fixed navbar height */
+    padding-top: 125px; /* Adjusted for fixed navbar height */
 }
 
 /* Button Styling */
@@ -40,8 +39,8 @@ h2 {
 
 /* Logo Styling */
 .navbar .logo {
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 100px;
 }
 
 /* Navigation Bar Styling */
@@ -74,9 +73,15 @@ h2 {
     padding: 100px 30px;
     background-image: linear-gradient(to bottom, #3f7f90, #689368);
 }
+/* Header Logo Image Styling */
+.header img {
+    height: 250px;
+    width: auto;
+    margin: 20px;
+}
 
 /* About Me Section */
-.header-image-jw img {
+#image-jw img{
     justify-content: center;
     border-radius: 50%;
     height: 200px;
@@ -161,6 +166,12 @@ h2 {
     margin-bottom: 15px;
 
 }
+/* Carousel button styling to help them to stand out*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000000;
+    border-radius: 50%;
+}
 
 /* Footer / contact */
 .contact-header {
@@ -229,16 +240,22 @@ h2 {
 /* Media queries */
 
 /* Extra small devices (phones, less than 576px) */
-@media screen and (max-width: 575.98px) {
+    @media screen and (max-width: 575.98px) {
     #boardwalk-games .carousel-container {
         max-width: 100%;
-    }
+        }
     #boardwalk-games h2,
     #love-running h2 {
         font-size: 40px;
         }
+        /* Centering and shrinking form controls on small screens */
+    .form-control,
+    .form-select {
+        max-width: 75%;
+        position: relative;
+        margin: 0 auto;
+        }
     }
-
     /* Small screens and up */
     @media screen and (min-width: 576px) {
     #boardwalk-games h2,
@@ -250,12 +267,30 @@ h2 {
     #description {
             padding-left: 20px;
         }
+    .form-control,
+    .form-select {
+        max-width: 75%;
+        position: relative;
+        margin: 0 auto;
+        }
+    
     }
     /* Medium devices (tablets, 768px and up) */
     @media screen and (min-width: 768px) {
         #projects .card {
             max-width: 250px;
         }
+    /* .form-control,
+    .form-select {
+
+        position: relative;
+        margin: 0 auto;
+        }
+    #contact-form #phone {
+        max-width: 50%;
+        margin: 0 auto;
+        } */
+    
     }
 
     /* Large devices (small laptops, 992px and up) */
