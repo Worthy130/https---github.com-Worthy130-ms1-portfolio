@@ -248,6 +248,7 @@ h2 {
     #love-running h2 {
         font-size: 40px;
         }
+    
         /* Centering and shrinking form controls on small screens */
     .form-control,
     .form-select {
@@ -256,6 +257,7 @@ h2 {
         margin: 0 auto;
         }
     }
+
     /* Small screens and up */
     @media screen and (min-width: 576px) {
     #boardwalk-games h2,
