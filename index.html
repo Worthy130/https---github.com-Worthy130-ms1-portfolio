@@ -1,211 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Pixelio - Your go-to source for stunning pixel art and retro gaming content. Explore our collection of pixel art creations, tutorials, and gaming reviews.">
-
-        <!--Bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--Custom css-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Pixelio</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pixelio - Modern web design and development.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<title>Pixelio | Modern Web Design</title>
 </head>
-
 <body>
-    <!--Bootstrap Navigation Bar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/Pixelio-blue-logo.png" alt="Pixelio logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a id="nav-home" class="nav-link" aria-current="page" href="index.html">Home</a>
-                    <a id="nav-about-me" class="nav-link" href="#about-me">About Me</a>
-                    <a id="nav-portfolio" class="nav-link" href="#portfolio">Portfolio</a>
-                    <a id="nav-contact" class="nav-link" href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
 
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+<div class="container">
+<a class="navbar-brand" href="#">Pixelio</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-    <header>
-        <div class="header">
-            <img src="assets/images/Pixelio-blue-logo.png" alt="Pixelio logo header image">
-            <h1>Welcome to Pixelio</h1>
-            <p class="lead">Pixelio is a creative web design and development studio dedicated to crafting visually
-                stunning, user-friendly websites that bring ideas to life. We combine innovative design with
-                cutting-edge technology to deliver digital experiences that captivate audiences and drive results.
-                Whether you need a sleek portfolio, a dynamic business site, or a fully customized platform, Pixelio
-                focuses on blending aesthetics with functionality to ensure your online presence stands out. Our mission
-                is simple: to transform your vision into a pixel-perfect reality.</p>
-        </div>
-    </header>
+<div class="collapse navbar-collapse justify-content-end" id="nav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-    <main>
-        <!--About Me Section-->
-        <section id="about-me">
-            <div class="container-fluid">
-                <div id="image-jw">
-                    <img src="assets/images/jw-pic.jpg" alt="Picture of the owner of Pixelio James Worthington">
-                    <h2>
-                        James Worthington - Owner, Web Designer and Creator
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        Hello, I’m James Worthington, a passionate Web Developer dedicated to building modern,
-                        responsive, and
-                        user-focused websites. My journey in web development began with a curiosity for how things work
-                        behind
-                        the screen, and it has grown into a career where creativity meets technology.
-                        I specialise in both front-end and back-end development, with strong skills in HTML, CSS,
-                        JavaScript,
-                        and frameworks like React and Node.js. I also have experience in API integration, database
-                        management,
-                        and ensuring websites are optimised for performance and accessibility. Every project I work on
-                        is guided
-                        by a commitment to clean, efficient code and intuitive design.
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <p>I believe that great websites are more than just functional—they should provide an engaging
-                            experience. I
-                            focus on: <br>
-                            • Responsive Design: Ensuring seamless performance across all devices. <br>
-                            • User Experience: Creating interfaces that are simple, elegant, and easy to navigate. <br>
-                            • Performance Optimization: Building fast-loading sites that keep users engaged. <br>
-                            • Continuous Learning: Staying up to date with the latest technologies and trends to deliver
-                            cutting-edge solutions.
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        Collaboration and problem-solving are at the heart of my work. I enjoy working with clients and
-                        teams to
-                        transform ideas into reality, delivering solutions that meet both technical and business goals.
-                        My
-                        ultimate aim is to create websites that not only look great but also help businesses thrive
-                        online.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Portfolio cards-->
-        <section id="portfolio">
-            <h2 class="text-center">Portfolio</h2>
-            <div class="container-fluid">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/bg-home1.png" class="card-img-top"
-                        alt="Picture with a link to Boardwalk Games portfolio section">
-                    <div class="card-body">
-                        <h5 class="card-title">Boardwalk Games</h5>
-                        <p class="card-text">Boardwalk Games, an immersive and responsive website</p>
-                        <a href="portfolio-gallery.html#boardwalk-games" class="btn">Go to image gallery</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/lr-home.png" class="card-img-top"
-                        alt="Picture with a link to Love Running portfolio section">
-                    <div class="card-body">
-                        <h5 class="card-title">Love Running</h5>
-                        <p class="card-text">Love Running, an immersive and responsive website</p>
-                        <a href="portfolio-gallery.html#love-running" class="btn">Go to image gallery</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<header id="hero" class="hero">
+<div class="container">
+<div class="row align-items-center min-vh-100">
+<div class="col-lg-6">
+<h1>Beautiful Websites.<br>Thoughtfully Built.</h1>
+<p class="lead">Pixelio creates modern, responsive websites that help businesses stand out online.</p>
+<a href="#portfolio" class="btn btn-primary btn-lg me-3">View Portfolio</a>
+<a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+</div>
+<div class="col-lg-6 text-center">
+<img src="assets/images/Pixelio-blue-logo.png" class="img-fluid hero-logo" alt="Pixelio logo">
+</div>
+</div>
+</div>
+</header>
 
-    </main>
+<section id="about" class="py-5">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-4 text-center">
+<img src="assets/images/jw-pic.jpg" class="img-fluid rounded-circle profile-img" alt="James Worthington">
+</div>
+<div class="col-lg-8">
+<h2>Hi, I'm James Worthington</h2>
+<p>I design and build clean, modern websites that are responsive, accessible and fast.</p>
+<div class="row">
+<div class="col-md-6"><ul><li>Responsive Design</li><li>Performance Optimisation</li></ul></div>
+<div class="col-md-6"><ul><li>Modern UI</li><li>SEO Friendly</li></ul></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- contact section -->
-    <footer id="contact" class="mt-auto">
-        <div class="container-fluid">
-            <div class="col-12">
-                <h2>Contact</h2>
-            </div>
-            <div class="col-6">
-                <!-- business address in <address> element for semantic html -->
-                <address>
-                    <strong><i class="fa-solid fa-location-dot"></i>Pixelio</strong>
-                    <br>
-                    123 Alpha Street
-                    <br>
-                    Alpha City, 12345
-                </address>
-                <p>
-                    <i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                    <i class="fa-regular fa-paper-plane"></i> info@pixelio.co.uk
-                </p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)"><i
-                            class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter feed (opens in a new tab)"><i
-                            class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-6">
-                <h3>Opening times</h3>
-                <table class="table table-primary">
-                    <thead>
-                        <tr>
-                            <th scope="col">Day</th>
-                            <th scope="col">Open</th>
-                            <th scope="col">Close</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Mon - Fri</th>
-                            <td>9pm</td>
-                            <td>5pm</td>
-                        </tr>
+<section id="services" class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center mb-5">Services</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="service-card"><h3>Web Design</h3><p>Modern interfaces with great UX.</p></div></div>
+<div class="col-md-4"><div class="service-card"><h3>Development</h3><p>Clean HTML, CSS, JavaScript and Bootstrap.</p></div></div>
+<div class="col-md-4"><div class="service-card"><h3>Optimisation</h3><p>Performance, accessibility and SEO.</p></div></div>
+</div>
+</div>
+</section>
 
-                        <tr>
-                            <th scope="row">Sat</th>
-                            <td>9pm</td>
-                            <td>1pm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Sun</th>
-                            <td>Closed</td>
-                            <td>Closed</td>
+<section id="portfolio" class="py-5">
+<div class="container">
+<h2 class="text-center mb-5">Featured Projects</h2>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="project-card">
+<img src="assets/images/bg-home1.png" class="img-fluid" alt="">
+<div class="p-4"><h4>Boardwalk Games</h4>
 
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+<p>
+A responsive gaming website built using
+HTML, CSS and Bootstrap.
+</p>
 
-        <div class="footer-divider">
-            <p class="text-center">© 2025 Pixelio. All rights reserved.</p>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                        alt="Valid CSS!" >
-                </a>
-        </div>
-    </footer>
-    <!--Bootstrap Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-    </script>
+<a href="#" class="btn btn-primary">
+View Project
+</a></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="project-card">
+<img src="assets/images/lr-home.png" class="img-fluid" alt="">
+<div class="p-4"><h4>Love Running</h4><a class="btn btn-primary" href="portfolio-gallery.html#love-running">View Project</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!--Fontawsome-->
-    <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+<section id="contact" class="cta">
+<div class="container text-center">
+<h2>Let's Build Something Amazing</h2>
+<p>Ready to start your next project?</p>
+<a class="btn btn-light btn-lg" href="contact.html">Get In Touch</a>
+</div>
+</section>
 
+<footer class="py-5">
+<div class="container text-center">
+<p>© 2026 Pixelio. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
