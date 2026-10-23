@@ -1,15 +1,17 @@
-window.addEventListener("scroll", function () {
-
-    const navbar = document.querySelector(".navbar");
-
-    if (window.scrollY > 60) {
-
-        navbar.classList.add("navbar-scrolled");
-
-    } else {
-
-        navbar.classList.remove("navbar-scrolled");
-
-    }
-
-});
+'use strict';
+const toggle = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('#navigation');
+function closeMenu(){navigation.classList.remove('open');toggle.setAttribute('aria-expanded','false');}
+toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));navigation.classList.toggle('open',open);});
+navigation?.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape' && navigation?.classList.contains('open')){closeMenu();toggle.focus();}});
+matchMedia('(min-width:761px)').addEventListener('change',event=>{if(event.matches)closeMenu();});
+document.querySelectorAll('[data-year]').forEach(element=>element.textContent=new Date().getFullYear());
+const projects={boardwalk:{name:'Boardwalk Games',description:'A portfolio project for a board game café. The design brings together café information, games and contact details in a warm, approachable layout, with versions designed for desktop and mobile screens.',tags:['HTML','CSS','Bootstrap'],images:[['bg-home1.png','Homepage — a warm welcome to the café'],['bg-game1.png','Games page — exploring the collection'],['bg-mobile-home1.png','Mobile homepage']]},running:{name:'Love Running',description:'A portfolio project for a running community. A bold photographic opening leads into club information, while a dedicated gallery celebrates the social side of running.',tags:['HTML','CSS','Responsive design'],images:[['lr-home.png','Homepage — introducing the running community'],['lr-info.png','Club information'],['lr-gallery.png','Photo gallery'],['lr-mobile-home.png','Mobile homepage']]}};
+const dialog=document.querySelector('#project-dialog');
+document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const project=projects[button.dataset.project];document.querySelector('#project-name').textContent=project.name;document.querySelector('#project-description').textContent=project.description;const tags=document.querySelector('#project-tags');tags.replaceChildren(...project.tags.map(label=>{const tag=document.createElement('span');tag.textContent=label;return tag;}));const gallery=document.querySelector('#project-gallery');gallery.replaceChildren(...project.images.map(([file,caption])=>{const figure=document.createElement('figure');const image=document.createElement('img');image.src='assets/images/'+file;image.alt=project.name+' — '+caption;image.loading='lazy';if(file.includes('mobile'))image.style.maxWidth='320px';const text=document.createElement('figcaption');text.textContent=caption;figure.append(image,text);return figure;}));dialog.showModal();dialog.scrollTop=0;}));
+document.querySelector('.close-dialog')?.addEventListener('click',()=>dialog.close());
+dialog?.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
+const form=document.querySelector('#enquiry-form');
+form?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(form);const name=String(data.get('name')).trim();const message=String(data.get('message')).trim();if(!name||!message){const field=form.elements[!name?'name':'message'];field.setCustomValidity('Please enter more than spaces.');field.reportValidity();field.addEventListener('input',()=>field.setCustomValidity(''),{once:true});return;}const subject='Pixelio enquiry: '+data.get('enquiry');const body='Hi James,\n\n'+message+'\n\nName: '+name+'\nEmail: '+data.get('email')+'\nService: '+data.get('enquiry');document.querySelector('#email-draft').value='To: info@pixelio.co.uk\nSubject: '+subject+'\n\n'+body;document.querySelector('#open-email').href='mailto:info@pixelio.co.uk?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.querySelector('#email-result').hidden=false;document.querySelector('#copy-status').textContent='';document.querySelector('#open-email').focus();});
+document.querySelector('#copy-email')?.addEventListener('click',async()=>{const draft=document.querySelector('#email-draft');try{await navigator.clipboard.writeText(draft.value);document.querySelector('#copy-status').textContent='Copied. Paste this into a new email and send when you’re ready.';}catch{draft.focus();draft.select();document.querySelector('#copy-status').textContent='Select and copy the draft above, then paste it into your email app.'}});

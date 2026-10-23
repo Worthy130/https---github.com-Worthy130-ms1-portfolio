@@ -2,121 +2,242 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pixelio - Modern web design and development.">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Independent web design and development by James Worthington. Explore Pixelio’s work and start a conversation about your next website.">
+<meta name="theme-color" content="#07111d">
+<title>Websites with purpose | Pixelio</title>
 <link rel="stylesheet" href="assets/css/styles.css">
-<title>Pixelio | Modern Web Design</title>
+<script src="assets/js/script.js" defer>
+</script>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top glass-nav">
-<div class="container">
-<a class="navbar-brand" href="#">Pixelio</a>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap nav-wrap">
+<a class="brand" href="index.html" aria-label="Pixelio home">
+<img class="brand-logo" src="assets/images/Pixelio-blue-logo.png" alt="Pixelio — Web Development Company" width="300" height="300">
+</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span>
 </button>
-
-<div class="collapse navbar-collapse justify-content-end" id="nav">
-<ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
-</div>
-</div>
+<nav id="navigation" aria-label="Main navigation">
+<a href="index.html#portfolio">Selected work</a>
+<a href="index.html#services">Services</a>
+<a href="index.html#about">About</a>
+<a class="button small" href="contact.html" >Let’s talk <span aria-hidden="true">↗</span>
+</a>
 </nav>
-
-<header id="hero" class="hero">
-<div class="container">
-<div class="row align-items-center min-vh-100">
-<div class="col-lg-6">
-<h1>Beautiful Websites.<br>Thoughtfully Built.</h1>
-<p class="lead">Pixelio creates modern, responsive websites that help businesses stand out online.</p>
-<a href="#portfolio" class="btn btn-primary btn-lg me-3">View Portfolio</a>
-<a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
-</div>
-<div class="col-lg-6 text-center">
-<img src="assets/images/Pixelio-blue-logo.png" class="img-fluid hero-logo" alt="Pixelio logo">
-</div>
-</div>
 </div>
 </header>
-
-<section id="about" class="py-5">
-<div class="container">
-<div class="row align-items-center g-5">
-<div class="col-lg-4 text-center">
-<img src="assets/images/jw-pic.jpg" class="img-fluid rounded-circle profile-img" alt="James Worthington">
+<main id="main">
+<section class="hero wrap" id="hero">
+<div class="hero-copy">
+<p class="eyebrow">
+<span class="status-dot">
+</span> INDEPENDENT WEB DESIGN & DEVELOPMENT</p>
+<h1>A better website.<br>A bigger <span class="accent">possibility.</span>
+</h1>
+<p class="intro">Thoughtful design meets practical development. I create clear, responsive websites that make your business feel at home online.</p>
+<div class="actions">
+<a class="button" href="contact.html">Let’s build your website <span aria-hidden="true">↗</span>
+</a>
+<a class="text-link" href="#portfolio">Explore the work <span aria-hidden="true">↓</span>
+</a>
 </div>
-<div class="col-lg-8">
-<h2>Hi, I'm James Worthington</h2>
-<p>I design and build clean, modern websites that are responsive, accessible and fast.</p>
-<div class="row">
-<div class="col-md-6"><ul><li>Responsive Design</li><li>Performance Optimisation</li></ul></div>
-<div class="col-md-6"><ul><li>Modern UI</li><li>SEO Friendly</li></ul></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="services" class="py-5 bg-light">
-<div class="container">
-<h2 class="text-center mb-5">Services</h2>
-<div class="row g-4">
-<div class="col-md-4"><div class="service-card"><h3>Web Design</h3><p>Modern interfaces with great UX.</p></div></div>
-<div class="col-md-4"><div class="service-card"><h3>Development</h3><p>Clean HTML, CSS, JavaScript and Bootstrap.</p></div></div>
-<div class="col-md-4"><div class="service-card"><h3>Optimisation</h3><p>Performance, accessibility and SEO.</p></div></div>
-</div>
-</div>
-</section>
-
-<section id="portfolio" class="py-5">
-<div class="container">
-<h2 class="text-center mb-5">Featured Projects</h2>
-<div class="row g-4">
-<div class="col-md-6">
-<div class="project-card">
-<img src="assets/images/bg-home1.png" class="img-fluid" alt="">
-<div class="p-4"><h4>Boardwalk Games</h4>
-
-<p>
-A responsive gaming website built using
-HTML, CSS and Bootstrap.
+<div class="hero-byline">
+<img src="assets/images/jw-pic.jpg" alt="" width="44" height="44">
+<p>Designed & built by <strong>James Worthington</strong>
 </p>
-
-<a href="#" class="btn btn-primary">
-View Project
-</a></div>
 </div>
 </div>
-<div class="col-md-6">
-<div class="project-card">
-<img src="assets/images/lr-home.png" class="img-fluid" alt="">
-<div class="p-4"><h4>Love Running</h4><a class="btn btn-primary" href="portfolio-gallery.html#love-running">View Project</a></div>
+<div class="hero-art" aria-label="A preview of the Love Running website">
+<div class="art-grid" aria-hidden="true">
+</div>
+<span class="art-label">FROM AN IDEA TO SOMETHING REAL</span>
+<div class="browser-preview">
+<div class="browser-bar">
+<span aria-hidden="true">● ● ●</span>
+<span>Love Running · Web design</span>
+<span aria-hidden="true">↗</span>
+</div>
+<img src="assets/images/lr-home.png" width="1400" height="900" alt="Love Running website featuring a runner in a park">
+</div>
+<div class="art-note">
+<span aria-hidden="true">↗</span>
+<div>Made for real people.<small>On every screen.</small>
 </div>
 </div>
+<span class="art-number" aria-hidden="true">01 — SELECTED WORK</span>
+</div>
+</section>
+<div class="principles">
+<div class="wrap">
+<span>Good-looking. Hard-working.</span>
+<span>Responsive by design</span>
+<span>Built with accessibility in mind</span>
+<span>Clear from the first click</span>
+</div>
+</div>
+<section class="section wrap" id="portfolio">
+<div class="section-top">
+<div>
+<p class="eyebrow">01 / SELECTED WORK</p>
+<h2>Ideas brought to life.</h2>
+</div>
+<p>A closer look at the design and development<br class="desktop-only"> behind two portfolio projects.</p>
+</div>
+<div class="project-grid">
+<article class="project">
+<button class="project-image boardwalk" data-project="boardwalk" aria-label="Explore Boardwalk Games project">
+<img src="assets/images/bg-home1.png" alt="Boardwalk Games homepage with café and board game imagery" loading="lazy" width="1400" height="900">
+<span class="image-arrow" aria-hidden="true">↗</span>
+</button>
+<div class="project-heading">
+<h3>
+<button class="project-title" data-project="boardwalk">Boardwalk Games</button>
+</h3>
+<span class="tag">DESIGN + DEVELOPMENT</span>
+</div>
+<p>A welcoming digital space for a board game café, with clear information and a playful personality.</p>
+</article>
+<article class="project">
+<button class="project-image running" data-project="running" aria-label="Explore Love Running project">
+<img src="assets/images/lr-home.png" alt="Love Running homepage with running club information" loading="lazy" width="1400" height="900">
+<span class="image-arrow" aria-hidden="true">↗</span>
+</button>
+<div class="project-heading">
+<h3>
+<button class="project-title" data-project="running">Love Running</button>
+</h3>
+<span class="tag">RESPONSIVE WEBSITE</span>
+</div>
+<p>A community-focused running website that brings club information and inspiration together.</p>
+</article>
+</div>
+</section>
+<section class="services-section" id="services">
+<div class="wrap section">
+<div class="section-top">
+<div>
+<p class="eyebrow">02 / HOW I CAN HELP</p>
+<h2>Small details.<br>Better experiences.</h2>
+</div>
+<p>From a fresh idea to a website that feels right.<br>Practical support at every stage.</p>
+</div>
+<div class="service-grid">
+<article>
+<span class="service-icon" aria-hidden="true">✳</span>
+<h3>Web design</h3>
+<p>Clear layouts, considered typography and a visual identity that feels like you.</p>
+<ul>
+<li>Page structure & user journeys</li>
+<li>Responsive interface design</li>
+<li>Consistent visual styling</li>
+</ul>
+</article>
+<article>
+<span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
+<h3>Development</h3>
+<p>Turn a design into a working website that’s easy to navigate on any device.</p>
+<ul>
+<li>HTML, CSS & JavaScript</li>
+<li>Mobile-friendly layouts</li>
+<li>Purposeful interactions</li>
+</ul>
+</article>
+<article>
+<span class="service-icon" aria-hidden="true">↗</span>
+<h3>Website improvements</h3>
+<p>Give your existing site a thoughtful refresh, focused on what visitors need.</p>
+<ul>
+<li>Performance improvements</li>
+<li>Accessibility refinements</li>
+<li>On-page SEO foundations</li>
+</ul>
+</article>
 </div>
 </div>
 </section>
-
-<section id="contact" class="cta">
-<div class="container text-center">
-<h2>Let's Build Something Amazing</h2>
-<p>Ready to start your next project?</p>
-<a class="btn btn-light btn-lg" href="contact.html">Get In Touch</a>
+<section class="section wrap about" id="about">
+<div class="portrait">
+<img src="assets/images/jw-pic.jpg" alt="James Worthington, the designer and developer behind Pixelio" loading="lazy" width="600" height="600">
+<span>THE PERSON BEHIND THE PIXELS</span>
+</div>
+<div>
+<p class="eyebrow">03 / MEET YOUR DESIGNER</p>
+<h2>Hi, I’m James.<br>I make the web<br>feel a little more human.</h2>
+<p>I’m James Worthington, the designer and developer behind Pixelio. I enjoy bringing ideas to life through clean design and thoughtful development.</p>
+<p>My approach is simple: understand what a website needs to do, make the important things easy to find, and pay attention to the details that make it enjoyable to use.</p>
+<a class="text-link" href="contact.html">Tell me what you have in mind <span aria-hidden="true">↗</span>
+</a>
 </div>
 </section>
-
-<footer class="py-5">
-<div class="container text-center">
-<p>© 2026 Pixelio. All Rights Reserved.</p>
+<section class="wrap process section">
+<div>
+<p class="eyebrow">A CLEAR WAY FORWARD</p>
+<h2>From first hello<br>to the final detail.</h2>
+</div>
+<ol>
+<li>
+<span>01</span>
+<div>
+<h3>Let’s understand the idea</h3>
+<p>We’ll talk about your goals, your audience and what your website needs to do.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Find the right direction</h3>
+<p>Shape the content and visual design around a clear, useful experience.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Build, refine and launch</h3>
+<p>Bring it together, check the details across devices and get ready to share it.</p>
+</div>
+</li>
+</ol>
+</section>
+<section class="wrap cta" id="contact">
+<p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+<h2>Let’s make<br>something <em>click.</em>
+</h2>
+<a class="button light" href="contact.html">Talk about your project <span aria-hidden="true">↗</span>
+</a>
+<span class="cta-flower" aria-hidden="true">✳</span>
+</section>
+</main>
+<dialog id="project-dialog" aria-labelledby="project-name">
+<div class="dialog-top">
+<span class="eyebrow">PROJECT SPOTLIGHT</span>
+<button class="close-dialog" aria-label="Close project preview">✕</button>
+</div>
+<h2 id="project-name">
+</h2>
+<p id="project-description">
+</p>
+<div id="project-tags" class="project-tags">
+</div>
+<div id="project-gallery">
+</div>
+<a class="button" href="contact.html">Have something similar in mind? <span aria-hidden="true">↗</span>
+</a>
+</dialog>
+<footer class="site-footer wrap">
+<div>
+<a class="brand" href="index.html" aria-label="Pixelio home">
+<img class="brand-logo" src="assets/images/Pixelio-blue-logo.png" alt="Pixelio — Web Development Company" width="300" height="300">
+</a>
+<p>Thoughtful design. Built with purpose.</p>
+</div>
+<div class="footer-links">
+<a href="index.html#portfolio">Work</a>
+<a href="index.html#about">About</a>
+<a href="contact.html">Contact</a>
+<span>© <span data-year>2026</span> Pixelio</span>
 </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

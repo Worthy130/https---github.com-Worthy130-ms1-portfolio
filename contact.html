@@ -1,321 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Contact Pixelio to discuss your next web design or development project.">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Contact | Pixelio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Tell James about your website project. Prepare an email enquiry with Pixelio.">
+<meta name="theme-color" content="#07111d">
+<title>Let’s talk | Pixelio</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/script.js" defer>
+</script>
 </head>
-
 <body>
-
-    <!-- ================= NAVIGATION ================= -->
-
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/Pixelio-blue-logo.png" alt="Pixelio Logo" class="logo">
-            </a>
-
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbar">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbar">
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about-me">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-    </nav>
-
-    <!-- ================= HERO ================= -->
-
-    <header class="contact-hero">
-
-        <div class="container text-center">
-
-            <img src="assets/images/Pixelio-blue-logo.png"
-                 alt="Pixelio Logo"
-                 class="hero-logo">
-
-            <h1>Let's Build Something Amazing</h1>
-
-            <p class="lead">
-                Whether you have a new project, need support for an existing website,
-                or simply want to ask a question, I'd love to hear from you.
-            </p>
-
-        </div>
-
-    </header>
-
-    <!-- ================= CONTACT ================= -->
-
-    <main>
-
-        <section id="contact" class="py-5">
-
-            <div class="container">
-
-                <div class="row g-5">
-
-                    <!-- Contact Information -->
-
-                    <div class="col-lg-4">
-
-                        <div class="contact-info">
-
-                            <h2>Get in Touch</h2>
-
-                            <p>
-                                I'm always happy to discuss new projects,
-                                answer questions or provide a quotation.
-                            </p>
-
-                            <hr>
-
-                            <p>
-                                <i class="fa-solid fa-phone"></i>
-                                01234 567890
-                            </p>
-
-                            <p>
-                                <i class="fa-solid fa-envelope"></i>
-                                info@pixelio.co.uk
-                            </p>
-
-                            <p>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Alpha City, United Kingdom
-                            </p>
-
-                            <div class="social-icons mt-4">
-
-                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Contact Form -->
-
-                    <div class="col-lg-8">
-
-                        <div class="contact-card">
-
-                            <h2>Send a Message</h2>
-
-                            <form action="thank-you.html" method="GET">
-
-                                <div class="row g-4">
-
-                                    <div class="col-md-6">
-
-                                        <label for="name" class="form-label">Full Name</label>
-
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="name"
-                                            name="name"
-                                            placeholder="Your name"
-                                            required>
-
-                                    </div>
-
-                                    <div class="col-md-6">
-
-                                        <label for="email" class="form-label">Email Address</label>
-
-                                        <input
-                                            type="email"
-                                            class="form-control"
-                                            id="email"
-                                            name="email"
-                                            placeholder="you@example.com"
-                                            required>
-
-                                    </div>
-
-                                    <div class="col-md-6">
-
-                                        <label for="phone" class="form-label">Telephone</label>
-
-                                        <input
-                                            type="tel"
-                                            class="form-control"
-                                            id="phone"
-                                            name="phone"
-                                            placeholder="01234 567890">
-
-                                    </div>
-
-                                    <div class="col-md-6">
-
-                                        <label for="enquiry" class="form-label">Enquiry Type</label>
-
-                                        <select
-                                            id="enquiry"
-                                            class="form-select"
-                                            name="enquiry-type"
-                                            required>
-
-                                            <option value="">Choose an option</option>
-
-                                            <option>New Website</option>
-
-                                            <option>Existing Website</option>
-
-                                            <option>General Enquiry</option>
-
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-12">
-
-                                        <label for="message" class="form-label">Message</label>
-
-                                        <textarea
-                                            id="message"
-                                            class="form-control"
-                                            rows="6"
-                                            name="message"
-                                            placeholder="Tell me about your project..."
-                                            required></textarea>
-
-                                    </div>
-
-                                    <div class="col-12">
-
-                                        <button class="btn btn-primary btn-lg">
-                                            Send Message
-                                        </button>
-
-                                    </div>
-
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-4">
-
-                    <h3>Pixelio</h3>
-
-                    <p>
-                        Creating modern, responsive websites that help businesses
-                        grow online.
-                    </p>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <h3>Quick Links</h3>
-
-                    <ul class="list-unstyled">
-
-                        <li><a href="index.html">Home</a></li>
-
-                        <li><a href="index.html#portfolio">Portfolio</a></li>
-
-                        <li><a href="contact.html">Contact</a></li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <h3>Business Hours</h3>
-
-                    <p>Monday – Friday: 9:00am – 5:00pm</p>
-
-                    <p>Saturday: 9:00am – 1:00pm</p>
-
-                    <p>Sunday: Closed</p>
-
-                </div>
-
-            </div>
-
-            <hr>
-
-            <p class="text-center mb-0">
-                © 2026 Pixelio. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
-
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap nav-wrap">
+<a class="brand" href="index.html" aria-label="Pixelio home">
+<img class="brand-logo" src="assets/images/Pixelio-blue-logo.png" alt="Pixelio — Web Development Company" width="300" height="300">
+</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span>
+</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="index.html#portfolio">Selected work</a>
+<a href="index.html#services">Services</a>
+<a href="index.html#about">About</a>
+<a class="button small" href="contact.html" aria-current="page">Let’s talk <span aria-hidden="true">↗</span>
+</a>
+</nav>
+</div>
+</header>
+<main id="main" class="wrap contact-layout section">
+<section class="contact-copy">
+<p class="eyebrow">LET’S START A CONVERSATION</p>
+<h1>A good website<br>starts with<br>
+<span class="accent">a hello.</span>
+</h1>
+<p class="intro">A new idea, a fresh start or a website that needs a little care. Tell me what you have in mind.</p>
+<div class="contact-person">
+<img src="assets/images/jw-pic.jpg" alt="" width="64" height="64">
+<div>
+<strong>James Worthington</strong>
+<p>Design & development at Pixelio</p>
+</div>
+</div>
+<a class="text-link" href="mailto:info@pixelio.co.uk">info@pixelio.co.uk <span aria-hidden="true">↗</span>
+</a>
+<div class="contact-note">
+<h2>What happens next?</h2>
+<p>Fill in a few details to prepare an email. Then choose “Open email app” to review and send it yourself.</p>
+</div>
+</section>
+<section class="contact-card" aria-labelledby="form-heading">
+<h2 id="form-heading">Tell me about your project</h2>
+<p>Start with the basics. We can work out the details together.</p>
+<form id="enquiry-form">
+<div class="form-row">
+<div>
+<label for="name">Your name <span>(required)</span>
+</label>
+<input id="name" name="name" autocomplete="name" placeholder="Alex Smith" maxlength="100" required>
+</div>
+<div>
+<label for="email">Email address <span>(required)</span>
+</label>
+<input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" maxlength="200" required>
+</div>
+</div>
+<label for="enquiry">How can I help? <span>(required)</span>
+</label>
+<select id="enquiry" name="enquiry" required>
+<option value="">Choose a service</option>
+<option>New website</option>
+<option>Website redesign</option>
+<option>Website improvements</option>
+<option>Something else</option>
+</select>
+<label for="message">Your project <span>(required)</span>
+</label>
+<textarea id="message" name="message" rows="6" placeholder="What are you planning, who is it for, and what would you like it to achieve?" maxlength="5000" required>
+</textarea>
+<p class="form-note">Your details are used only to compose this email. This form does not submit or store your message on a server.</p>
+<button class="button" type="submit">Prepare my email <span aria-hidden="true">↗</span>
+</button>
+<noscript>
+<p>This form needs JavaScript to prepare an email. You can also email <a href="mailto:info@pixelio.co.uk">info@pixelio.co.uk</a> directly.</p>
+</noscript>
+<div id="email-result" class="email-result" hidden>
+<p role="status">Your draft is ready. Open your email app to review and send it. No message has been sent yet.</p>
+<div class="actions">
+<a id="open-email" class="text-link">Open email app ↗</a>
+<button id="copy-email" type="button" class="text-link">Copy message</button>
+</div>
+<label for="email-draft">Your email draft</label>
+<textarea id="email-draft" rows="8" readonly>
+</textarea>
+<p id="copy-status" role="status">
+</p>
+</div>
+</form>
+</section>
+</main>
+<footer class="site-footer wrap">
+<div>
+<a class="brand" href="index.html" aria-label="Pixelio home">
+<img class="brand-logo" src="assets/images/Pixelio-blue-logo.png" alt="Pixelio — Web Development Company" width="300" height="300">
+</a>
+<p>Thoughtful design. Built with purpose.</p>
+</div>
+<div class="footer-links">
+<a href="index.html#portfolio">Work</a>
+<a href="index.html#about">About</a>
+<a href="contact.html">Contact</a>
+<span>© <span data-year>2026</span> Pixelio</span>
+</div>
+</footer>
 </body>
-
 </html>
